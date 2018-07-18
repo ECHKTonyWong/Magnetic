@@ -11,6 +11,7 @@ import SpriteKit
 @objcMembers open class SKMultilineLabelNode: SKNode {
     
     open var text: String? { didSet { update() } }
+    open var context: Any?
     
     open var fontName: String? { didSet { update() } }
     open var fontSize: CGFloat = 32 { didSet { update() } }
